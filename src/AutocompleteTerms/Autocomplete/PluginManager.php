@@ -71,17 +71,17 @@ class PluginManager extends \VuFind\Autocomplete\PluginManager
      * @var array
      */
     protected $factories = [
-        'VuFind\Autocomplete\None' => 'Zend\ServiceManager\Factory\InvokableFactory',
+        'VuFind\Autocomplete\None' => 'Laminas\ServiceManager\Factory\InvokableFactory',
         'VuFind\Autocomplete\Eds' => 'VuFind\Autocomplete\EdsFactory',
         'VuFind\Autocomplete\OCLCIdentities' =>
-            'Zend\ServiceManager\Factory\InvokableFactory',
+            'Laminas\ServiceManager\Factory\InvokableFactory',
         'VuFind\Autocomplete\Search2' => 'VuFind\Autocomplete\SolrFactory',
         'VuFind\Autocomplete\Search2CN' => 'VuFind\Autocomplete\SolrFactory',
         'VuFind\Autocomplete\Solr' => 'VuFind\Autocomplete\SolrFactory',
         'VuFind\Autocomplete\SolrAuth' => 'VuFind\Autocomplete\SolrFactory',
         'VuFind\Autocomplete\SolrCN' => 'VuFind\Autocomplete\SolrFactory',
         'VuFind\Autocomplete\SolrReserves' => 'VuFind\Autocomplete\SolrFactory',
-        'VuFind\Autocomplete\Tag' => 'Zend\ServiceManager\Factory\InvokableFactory',
+        'VuFind\Autocomplete\Tag' => 'Laminas\ServiceManager\Factory\InvokableFactory',
         'AutocompleteTerms\Autocomplete\Terms' => 'AutocompleteTerms\Autocomplete\TermsFactory',
     ];
 
