@@ -2,13 +2,17 @@
 namespace AutocompleteTerms\Module\Config;
 
 $config = [
-    'service_manager' => [
-        'allow_override' => true,
-        'factories' => [
-            'AutocompleteTerms\Autocomplete\Terms' => 'AutocompleteTerms\Autocomplete\TermsFactory',
-        ],
-        'aliases' => [
-            'terms' => 'AutocompleteTerms\Autocomplete\Terms',
+    'vufind' => [
+        'plugin_managers' => [
+            'autocomplete' => [
+                'factories' => [
+                    'AutocompleteTerms\Autocomplete\Terms' => 'AutocompleteTerms\Autocomplete\TermsFactory',
+                ],
+                'aliases' => [
+                    'terms' => 'AutocompleteTerms\Autocomplete\Terms',
+                    'Terms' => 'AutocompleteTerms\Autocomplete\Terms',
+                ],
+            ],
         ],
     ],
 ];
