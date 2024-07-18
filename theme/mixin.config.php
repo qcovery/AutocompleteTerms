@@ -1,4 +1,4 @@
 <?php
 return [
-    'js' => ['lib/autocomplete.js'],
+    'js' => ['vendor/autocomplete.js'],
 ];
